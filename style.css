@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#xo{
+    display: block;
+    width:40em;
+    height:auto;
+    margin:2em;
+    overflow: hidden;
+}
+
+#menu{
+    width:40em;
+    height:20em;
+    margin:2em;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+b{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3em;
+    overflow: hidden;
+}
+
+.box1{
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-width: 0.3rem;
+    font-size: 2.7em;
+    border-color: white;
+    border-style: double;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media (max-width: 450px) {
+    .box1 {
+        font-size: 2.3em; 
+    }
+    h1{
+        font-size: 3.2em;
+    }   
+    b{
+        font-size:2.5em;
+    }
+}

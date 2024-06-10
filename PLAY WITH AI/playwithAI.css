@@ -1,0 +1,140 @@
+body {
+    font-family: cursive;
+    background-color: black;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 96%;
+}
+
+button {
+    margin: 0.7em;
+    font-size: 1.3em;
+    height: 2.5em;
+    width: 9em;
+    font-family: cursive;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b8b8b; 
+    color: black; 
+    text-decoration: underline;
+    border: 0.2em solid white; 
+    box-shadow: 0px 0.2em 0.4em rgba(75, 75, 75, 0.2); 
+}
+
+
+/*FOOTER*/
+#volumeoptions{
+    font-size: 2.2em;
+    position: fixed;
+    bottom:1em;
+    right:1em;
+}
+
+
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100%;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*PLAYER*/
+.player {
+    width: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 2em;
+    align-self: safe;
+}
+
+h6{
+    margin: 0px;
+    padding-bottom: 1em;
+    height:auto;
+    font-size: 3.2em;
+    text-decoration: underline;
+}
+
+.move{
+    height:6em;
+    width:6em;
+    font-size: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-style: oblique;
+}
+
+#move1{
+    background-color: gold;
+}
+
+/*GRID*/
+.area {
+    display: flex;
+    height:31em ;
+    width: 37em;
+    justify-content: center;
+    align-items: center;
+    margin:2em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 95%; 
+    height: 95%; 
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    border: 0.1rem groove white;
+    font-size: 6em;
+    font-family: cursive;
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+    border-top: none;
+}
+.grid-item:nth-child(1),
+.grid-item:nth-child(4),
+.grid-item:nth-child(7) {
+    border-left: none;
+}
+.grid-item:nth-child(3),
+.grid-item:nth-child(6),
+.grid-item:nth-child(9) {
+    border-right: none;
+}
+.grid-item:nth-child(7),
+.grid-item:nth-child(8),
+.grid-item:nth-child(9) {
+    border-bottom: none;
+}

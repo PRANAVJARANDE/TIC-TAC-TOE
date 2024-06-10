@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TIC TAC TOE</h1><hr>
+    </header>
+    <main>
+        <img id="xo" src="won-tic-rac-toe-game.webp">
+        <div id="menu">  
+            <b>PLAYER MODE</b>
+            <a href="/MULTIPLAYER/multiplayer.html" class="box1">MULTI PLAYER</a>
+            <a href="/PLAY WITH AI/playwithAI.html" class="box1">PLAY WITH AI</a>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+<script>
+    let buttonaudio=new Audio('/AUDIO/button.wav');
+    let buttons=document.querySelectorAll('a');
+    buttons.forEach(function(x){
+        x.addEventListener('click',function(){
+        buttonaudio.play();
+    });
+    });
+</script>
+
+</html>
