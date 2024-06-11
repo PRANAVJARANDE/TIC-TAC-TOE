@@ -2,6 +2,10 @@ body {
     font-family: cursive;
     background-color: black;
     color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 a{
@@ -22,7 +26,6 @@ button {
     font-size: 1.3em;
     height: 2.5em;
     width: 9em;
-    font-family: cursive;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -50,33 +53,29 @@ main{
     flex-direction: row;
     flex-wrap:wrap;
     width: 100%;
-    
     justify-content: space-evenly;
     align-items: center;
 }
 
 /*PLAYER*/
 .player {
-    width: 24em;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
     align-items: center;
     margin: 2em;
-    align-self: safe;
 }
 
 h6{
     margin: 0px;
-    padding-bottom: 1em;
+    padding-bottom: 0.8em;
     height:auto;
     font-size: 3.2em;
     text-decoration: underline;
 }
 
 .move{
-    height:6em;
-    width:6em;
+    height:5.5em;
+    width:5.5em;
     font-size: 3.2em;
     display: flex;
     justify-content: center;
@@ -138,3 +137,148 @@ h6{
 .grid-item:nth-child(9) {
     border-bottom: none;
 }
+
+
+@media (max-width: 1017px) {
+    .area{
+        zoom:0.9;
+    }
+}
+
+@media (max-width: 952px) {
+    .player{
+        zoom:0.9;
+    }
+}
+
+@media (max-width: 917px) {
+    .area{
+        zoom:0.85;
+    }
+}
+
+@media (max-width: 885px) {
+    .player{
+        zoom:0.8;
+    }
+}
+
+@media (max-width: 850px) {
+    .area{
+        zoom:0.8;
+    }
+}
+
+
+@media (max-width: 817px) {
+    .area{
+        zoom:0.75;
+    }
+    .player{
+        zoom:0.75;
+    }
+    header{
+        zoom:0.9;
+    }
+}
+
+@media (max-width: 770px) {
+    .player{
+        zoom:0.6;
+    }
+}
+
+@media (max-width: 625px) {
+    header{
+        zoom:0.8;
+    }
+}
+
+@media (max-width: 557px) {
+    header{
+        zoom:0.7;
+    }
+}
+
+@media (max-width: 489px) {
+    header{
+        zoom:0.6;
+    }
+}
+
+
+@media (max-width: 355px) {
+    .area{
+        zoom:0.7;
+    }
+}
+
+@media (max-width: 340px) {
+    .area{
+        zoom:0.65;
+    }
+}
+
+
+/*
+@media (max-width: 1193px) {
+    .area{
+        zoom:0.8;
+    }
+}
+
+@media (max-width: 1161px) {
+    .player{
+        zoom:0.8;
+    }
+    header{
+        zoom:0.9;
+    }
+    main{
+        zoom:0.8;
+    }
+}
+
+@media (max-width: 832px) {
+    #p2{
+        order:2;
+    }
+    .area{
+        order:3;
+    }
+    .player{
+        zoom:0.8;
+    }
+    .area{
+        zoom:1;
+    }
+}
+
+@media (max-width: 601px) {
+    .player{
+        zoom:0.8;
+    }
+    .area{
+        zoom:0.8;
+    }
+}
+
+@media (max-width: 412px) {
+    .player{
+        zoom:0.7;
+    }
+    header{
+        zoom:0.8;
+    }
+    
+}
+
+@media (max-width: 364px) {
+    .player{
+        zoom:0.6;
+    }
+    header{
+        zoom:0.7;
+    }
+}
+ */
