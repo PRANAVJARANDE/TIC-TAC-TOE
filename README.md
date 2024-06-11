@@ -12,7 +12,7 @@ This is a responsive Tic Tac Toe game built with HTML, CSS, and JavaScript. The 
 - **Audio Effects**: Audio feedback for player actions.
 
 ## Preview Link 
-https://eloquent-madeleine-46c0ed.netlify.app
+https://stalwart-kleicha-4edc54.netlify.app/
 
 
 ## Screenshots
